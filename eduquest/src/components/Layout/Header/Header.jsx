@@ -6,7 +6,7 @@ import { Link, NavLink } from 'react-router-dom'
 
 function Header() {
     const {isOpen,onOpen,onClose} = useDisclosure()
-    const isAuthenticated=true
+    const isAuthenticated=false
     const user = {
         role:"admin"
     }
@@ -50,7 +50,7 @@ function Header() {
                         {isAuthenticated?<>
                             <VStack>
                                 <HStack>
-                                    <NavLink to="/profile">
+                                    <NavLink onClick={onClose} to="/profile">
                                         <Button variant={"ghost"} borderWidth={"2px"} colorScheme='yellow'>Profile</Button>
                                     </NavLink>
                                         <p style={{cursor:"pointer"}}>OR</p>
@@ -63,11 +63,11 @@ function Header() {
                                 </Link>)}
                             </VStack>
                         </>:<>
-                            <NavLink to="/login">
+                            <NavLink onClick={onClose} to="/login">
                                 <Button colorScheme='yellow'>Login</Button>
                             </NavLink>
                             <p style={{cursor:"pointer"}}>OR</p>
-                            <NavLink to="/register">
+                            <NavLink onClick={onClose} to="/register">
                                 <Button colorScheme='yellow'>Register</Button>
                             </NavLink>
                         </>}

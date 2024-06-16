@@ -25,45 +25,46 @@ function Home() {
         
                 <VStack width={"full"} alignItems={["center","flex-end"]}>
                     <Heading children="Learn form the experts" size={"2xl"} />
-                    <Text children="Find valueable content at valid price" />
+                    <Text children="Find valueable contents at valid price" />
                     <NavLink to="/courses"><Button size={"lg"} colorScheme='yellow'>Explore Now</Button></NavLink>
                 
                 </VStack>
                 <Image className='vg-graphic' boxSize={"md"} src={vg} objectFit={'contain'} ></Image>
             </Stack>
-            <Box padding={"3"} bg='blackAlpha.800'>
-                <Heading
-                    textAlign={"center"}
-                    fontFamily={"body"}
-                    color={"yellow.400"}
-                    children="Our Brands"
-                >
-                </Heading>
-                <HStack className='brandsBanner' justifyContent={"space-evenly"} marginTop="4">
-                    <CgGoogle />
-                    <CgYoutube />
-                    <SiCoursera />
-                    <SiUdemy />
-                    <DiAws />
-                </HStack>
-            </Box>
+        </div>
+        <Box padding={"3"} bg='blackAlpha.800'>
+            <Heading
+                textAlign={"center"}
+                fontFamily={"body"}
+                color={"yellow.400"}
+                children="Our Brands"
+            >
+            </Heading>
+            <HStack className='brandsBanner' justifyContent={"space-evenly"} marginTop="4">
+                <CgGoogle />
+                <CgYoutube />
+                <SiCoursera />
+                <SiUdemy />
+                <DiAws />
+            </HStack>
+        </Box>
 
-            <div className='container2'>
-                <video
-                    autoPlay
-                    controls
-                    src={vdo}
-                    controlsList='nodownload nofullscreen noremoteplayback'
-                    disablePictureInPicture
-                    disableRemotePlayback
-                >
-                </video>
-            </div>
+        <div className='container2'>
+            <video
+                autoPlay
+                controls
+                src={vdo}
+                controlsList='nodownload nofullscreen noremoteplayback'
+                disablePictureInPicture
+                disableRemotePlayback
+            >
+            </video>
+        </div>
            
 
             
 
-        </div>
+
 
 
     </section>

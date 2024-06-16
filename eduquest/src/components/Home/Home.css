@@ -3,6 +3,7 @@
     box-sizing: border-box;
     padding: 5rem;
 }
+
 .vg-graphic{
     filter: drop-shadow(0 40px 10px rgba(0,0,0,0.3));
     animation: vg-animation 1s infinite ease-in-out alternate;
@@ -36,4 +37,13 @@
     border-radius: 5px;
     outline: none;
     width: 60%;
+}
+
+.courses{
+    width: 250px;
+    margin-bottom: 1rem;
+    transition: all 0.5s;
+}
+.courses:hover{
+    transform: translateY(-10px)
 }
